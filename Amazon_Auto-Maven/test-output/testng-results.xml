@@ -1,0 +1,1520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="27" passed="17" failed="6" skipped="4">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-01T15:47:52 IST" name="Suite" finished-at="2024-03-01T15:54:23 IST" duration-ms="391289">
+    <groups>
+    </groups>
+    <test started-at="2024-03-01T15:47:52 IST" name="ChromeTest" finished-at="2024-03-01T15:52:02 IST" duration-ms="250333">
+      <class name="testNG.verifyAddToCartOptionOnApplication">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@7b98f307]" started-at="2024-03-01T15:47:52 IST" name="openBrowser" finished-at="2024-03-01T15:47:54 IST" duration-ms="2164" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@7b98f307]" started-at="2024-03-01T15:47:58 IST" name="createPOMObjects" finished-at="2024-03-01T15:47:58 IST" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObjects -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@7b98f307]" started-at="2024-03-01T15:47:59 IST" name="openApplication" finished-at="2024-03-01T15:49:00 IST" duration-ms="61410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="addToCartFuctionality()[pri:1, instance:testNG.verifyAddToCartOptionOnApplication@7b98f307]" started-at="2024-03-01T15:49:00 IST" name="addToCartFuctionality" finished-at="2024-03-01T15:49:52 IST" duration-ms="52220" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@id='add-to-cart-button'])[2]"}
+  (Session info: chrome=122.0.6261.95)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\amol\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 988f4b3e20371d30cf9222f60bd2394d
+*** Element info: {Using=xpath, value=(//input[@id='add-to-cart-button'])[2]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@id='add-to-cart-button'])[2]"}
+  (Session info: chrome=122.0.6261.95)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\amol\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 988f4b3e20371d30cf9222f60bd2394d
+*** Element info: {Using=xpath, value=(//input[@id='add-to-cart-button'])[2]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Pages.SelectedProductPage.clickOnAddToCart(SelectedProductPage.java:41)
+at testNG.verifyAddToCartOptionOnApplication.addToCartFuctionality(verifyAddToCartOptionOnApplication.java:98)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartFuctionality -->
+        <test-method is-config="true" signature="logOutApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@7b98f307]" started-at="2024-03-01T15:49:52 IST" name="logOutApplication" finished-at="2024-03-01T15:50:00 IST" duration-ms="7653" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addToCartFuctionality status=FAILURE method=verifyAddToCartOptionOnApplication.addToCartFuctionality()[pri:1, instance:testNG.verifyAddToCartOptionOnApplication@7b98f307] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApplication -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@7b98f307]" started-at="2024-03-01T15:50:00 IST" name="openApplication" finished-at="2024-03-01T15:50:54 IST" duration-ms="54150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="buyNowFunctionality()[pri:2, instance:testNG.verifyAddToCartOptionOnApplication@7b98f307]" started-at="2024-03-01T15:50:54 IST" name="buyNowFunctionality" finished-at="2024-03-01T15:51:31 IST" duration-ms="36663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyNowFunctionality -->
+        <test-method is-config="true" signature="logOutApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@7b98f307]" started-at="2024-03-01T15:51:31 IST" name="logOutApplication" finished-at="2024-03-01T15:51:31 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=buyNowFunctionality status=SUCCESS method=verifyAddToCartOptionOnApplication.buyNowFunctionality()[pri:2, instance:testNG.verifyAddToCartOptionOnApplication@7b98f307] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApplication -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@7b98f307]" started-at="2024-03-01T15:51:31 IST" name="clearObjects" finished-at="2024-03-01T15:51:31 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@7b98f307]" started-at="2024-03-01T15:51:58 IST" name="closeBrowser" finished-at="2024-03-01T15:51:59 IST" duration-ms="1233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNG.verifyAddToCartOptionOnApplication -->
+      <class name="testNG.verifyPrimeVideoTrailerPlayFuctionality">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@33d512c1]" started-at="2024-03-01T15:47:57 IST" name="openBrowser" finished-at="2024-03-01T15:47:58 IST" duration-ms="1352" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@33d512c1]" started-at="2024-03-01T15:47:58 IST" name="createPOMObjects" finished-at="2024-03-01T15:47:58 IST" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObjects -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@33d512c1]" started-at="2024-03-01T15:47:59 IST" name="openApplication" finished-at="2024-03-01T15:48:43 IST" duration-ms="44327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="primeVideosectionFuctionality()[pri:1, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@33d512c1]" started-at="2024-03-01T15:48:43 IST" name="primeVideosectionFuctionality" finished-at="2024-03-01T15:49:03 IST" duration-ms="20317" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (-1056, 463)
+  (Session info: chrome=122.0.6261.95)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\amol\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63031}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ae7f24e86d014367e047927d7beb0f0d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (-1056, 463)
+  (Session info: chrome=122.0.6261.95)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\amol\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63031}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ae7f24e86d014367e047927d7beb0f0d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Pages.PrimeVideoPage.clickOnMoreDetails(PrimeVideoPage.java:92)
+at testNG.verifyPrimeVideoTrailerPlayFuctionality.primeVideosectionFuctionality(verifyPrimeVideoTrailerPlayFuctionality.java:94)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- primeVideosectionFuctionality -->
+        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@33d512c1]" started-at="2024-03-01T15:49:03 IST" name="closeApplication" finished-at="2024-03-01T15:49:18 IST" duration-ms="14564" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=primeVideosectionFuctionality status=FAILURE method=verifyPrimeVideoTrailerPlayFuctionality.primeVideosectionFuctionality()[pri:1, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@33d512c1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@33d512c1]" started-at="2024-03-01T15:49:18 IST" name="openApplication" finished-at="2024-03-01T15:50:06 IST" duration-ms="48378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="verifyCategorySectionInPrimeVideo()[pri:2, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@33d512c1]" started-at="2024-03-01T15:50:06 IST" name="verifyCategorySectionInPrimeVideo" finished-at="2024-03-01T15:50:22 IST" duration-ms="15933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategorySectionInPrimeVideo -->
+        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@33d512c1]" started-at="2024-03-01T15:50:22 IST" name="closeApplication" finished-at="2024-03-01T15:50:22 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCategorySectionInPrimeVideo status=SUCCESS method=verifyPrimeVideoTrailerPlayFuctionality.verifyCategorySectionInPrimeVideo()[pri:2, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@33d512c1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@33d512c1]" started-at="2024-03-01T15:50:22 IST" name="clearObjects" finished-at="2024-03-01T15:50:22 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@33d512c1]" started-at="2024-03-01T15:52:02 IST" name="closeBrowser" finished-at="2024-03-01T15:52:02 IST" duration-ms="905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNG.verifyPrimeVideoTrailerPlayFuctionality -->
+      <class name="testNG.verifyCustomerServiceSection">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNG.verifyCustomerServiceSection@397fbdb]" started-at="2024-03-01T15:47:54 IST" name="openBrowser" finished-at="2024-03-01T15:47:55 IST" duration-ms="1148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:testNG.verifyCustomerServiceSection@397fbdb]" started-at="2024-03-01T15:47:58 IST" name="createPOMObjects" finished-at="2024-03-01T15:47:58 IST" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObjects -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyCustomerServiceSection@397fbdb]" started-at="2024-03-01T15:47:59 IST" name="openApplication" finished-at="2024-03-01T15:48:12 IST" duration-ms="13513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="verifyMsgOnCustomerServicePage()[pri:1, instance:testNG.verifyCustomerServiceSection@397fbdb]" started-at="2024-03-01T15:48:12 IST" name="verifyMsgOnCustomerServicePage" finished-at="2024-03-01T15:48:13 IST" duration-ms="1027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMsgOnCustomerServicePage -->
+        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyCustomerServiceSection@397fbdb]" started-at="2024-03-01T15:48:13 IST" name="closeApplication" finished-at="2024-03-01T15:48:13 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMsgOnCustomerServicePage status=SUCCESS method=verifyCustomerServiceSection.verifyMsgOnCustomerServicePage()[pri:1, instance:testNG.verifyCustomerServiceSection@397fbdb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyCustomerServiceSection@397fbdb]" started-at="2024-03-01T15:48:13 IST" name="openApplication" finished-at="2024-03-01T15:49:21 IST" duration-ms="67899" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="verifyFindMoreSolutionAndAskQuationfunction()[pri:2, instance:testNG.verifyCustomerServiceSection@397fbdb]" started-at="2024-03-01T15:49:21 IST" name="verifyFindMoreSolutionAndAskQuationfunction" finished-at="2024-03-01T15:49:56 IST" duration-ms="35250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFindMoreSolutionAndAskQuationfunction -->
+        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyCustomerServiceSection@397fbdb]" started-at="2024-03-01T15:49:56 IST" name="closeApplication" finished-at="2024-03-01T15:49:56 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyFindMoreSolutionAndAskQuationfunction status=SUCCESS method=verifyCustomerServiceSection.verifyFindMoreSolutionAndAskQuationfunction()[pri:2, instance:testNG.verifyCustomerServiceSection@397fbdb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyCustomerServiceSection@397fbdb]" started-at="2024-03-01T15:49:56 IST" name="openApplication" finished-at="2024-03-01T15:50:36 IST" duration-ms="39523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="verifyLaguageSelectionMarathi()[pri:3, instance:testNG.verifyCustomerServiceSection@397fbdb]" started-at="2024-03-01T15:50:36 IST" name="verifyLaguageSelectionMarathi" finished-at="2024-03-01T15:50:41 IST" duration-ms="5669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLaguageSelectionMarathi -->
+        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyCustomerServiceSection@397fbdb]" started-at="2024-03-01T15:50:41 IST" name="closeApplication" finished-at="2024-03-01T15:50:41 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLaguageSelectionMarathi status=SUCCESS method=verifyCustomerServiceSection.verifyLaguageSelectionMarathi()[pri:3, instance:testNG.verifyCustomerServiceSection@397fbdb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:testNG.verifyCustomerServiceSection@397fbdb]" started-at="2024-03-01T15:50:41 IST" name="clearObjects" finished-at="2024-03-01T15:50:41 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNG.verifyCustomerServiceSection@397fbdb]" started-at="2024-03-01T15:51:59 IST" name="closeBrowser" finished-at="2024-03-01T15:52:00 IST" duration-ms="1110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNG.verifyCustomerServiceSection -->
+      <class name="testNG.verifyNewLaunchSectionWithLaptop">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@3590fc5b]" started-at="2024-03-01T15:47:55 IST" name="openBrowser" finished-at="2024-03-01T15:47:57 IST" duration-ms="1596" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@3590fc5b]" started-at="2024-03-01T15:47:58 IST" name="createPOMObjects" finished-at="2024-03-01T15:47:58 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObjects -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@3590fc5b]" started-at="2024-03-01T15:47:59 IST" name="openApplication" finished-at="2024-03-01T15:49:43 IST" duration-ms="104866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="verifyAddBothTocartFuctionality()[pri:1, instance:testNG.verifyNewLaunchSectionWithLaptop@3590fc5b]" started-at="2024-03-01T15:49:43 IST" name="verifyAddBothTocartFuctionality" finished-at="2024-03-01T15:50:42 IST" duration-ms="58501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddBothTocartFuctionality -->
+        <test-method is-config="true" signature="logOutApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@3590fc5b]" started-at="2024-03-01T15:50:42 IST" name="logOutApplication" finished-at="2024-03-01T15:50:42 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddBothTocartFuctionality status=SUCCESS method=verifyNewLaunchSectionWithLaptop.verifyAddBothTocartFuctionality()[pri:1, instance:testNG.verifyNewLaunchSectionWithLaptop@3590fc5b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApplication -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@3590fc5b]" started-at="2024-03-01T15:50:42 IST" name="openApplication" finished-at="2024-03-01T15:51:41 IST" duration-ms="59341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="verifyGotoCartbuttonOnRightSideSection()[pri:2, instance:testNG.verifyNewLaunchSectionWithLaptop@3590fc5b]" started-at="2024-03-01T15:51:41 IST" name="verifyGotoCartbuttonOnRightSideSection" finished-at="2024-03-01T15:51:58 IST" duration-ms="16685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGotoCartbuttonOnRightSideSection -->
+        <test-method is-config="true" signature="logOutApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@3590fc5b]" started-at="2024-03-01T15:51:58 IST" name="logOutApplication" finished-at="2024-03-01T15:51:58 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyGotoCartbuttonOnRightSideSection status=SUCCESS method=verifyNewLaunchSectionWithLaptop.verifyGotoCartbuttonOnRightSideSection()[pri:2, instance:testNG.verifyNewLaunchSectionWithLaptop@3590fc5b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApplication -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@3590fc5b]" started-at="2024-03-01T15:51:58 IST" name="clearObjects" finished-at="2024-03-01T15:51:58 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@3590fc5b]" started-at="2024-03-01T15:52:00 IST" name="closeBrowser" finished-at="2024-03-01T15:52:02 IST" duration-ms="1285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNG.verifyNewLaunchSectionWithLaptop -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2024-03-01T15:47:52 IST" name="EdgeTest" finished-at="2024-03-01T15:53:03 IST" duration-ms="310920">
+      <class name="testNG.verifyAddToCartOptionOnApplication">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@7dcf94f8]" started-at="2024-03-01T15:47:52 IST" name="openBrowser" finished-at="2024-03-01T15:47:56 IST" duration-ms="3957" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@7dcf94f8]" started-at="2024-03-01T15:48:19 IST" name="createPOMObjects" finished-at="2024-03-01T15:48:19 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObjects -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@7dcf94f8]" started-at="2024-03-01T15:48:19 IST" name="openApplication" finished-at="2024-03-01T15:50:57 IST" duration-ms="157714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="addToCartFuctionality()[pri:1, instance:testNG.verifyAddToCartOptionOnApplication@7dcf94f8]" started-at="2024-03-01T15:50:57 IST" name="addToCartFuctionality" finished-at="2024-03-01T15:51:30 IST" duration-ms="33217" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@id='add-to-cart-button'])[2]"}
+  (Session info: MicrosoftEdge=122.0.2365.59)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 122.0.2365.59, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:62985}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 960dc18ea301dd20a9995519cdcce3b4
+*** Element info: {Using=xpath, value=(//input[@id='add-to-cart-button'])[2]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@id='add-to-cart-button'])[2]"}
+  (Session info: MicrosoftEdge=122.0.2365.59)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 122.0.2365.59, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:62985}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 960dc18ea301dd20a9995519cdcce3b4
+*** Element info: {Using=xpath, value=(//input[@id='add-to-cart-button'])[2]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Pages.SelectedProductPage.clickOnAddToCart(SelectedProductPage.java:41)
+at testNG.verifyAddToCartOptionOnApplication.addToCartFuctionality(verifyAddToCartOptionOnApplication.java:98)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartFuctionality -->
+        <test-method is-config="true" signature="logOutApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@7dcf94f8]" started-at="2024-03-01T15:51:30 IST" name="logOutApplication" finished-at="2024-03-01T15:51:32 IST" duration-ms="2052" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addToCartFuctionality status=FAILURE method=verifyAddToCartOptionOnApplication.addToCartFuctionality()[pri:1, instance:testNG.verifyAddToCartOptionOnApplication@7dcf94f8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApplication -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@7dcf94f8]" started-at="2024-03-01T15:51:32 IST" name="openApplication" finished-at="2024-03-01T15:51:58 IST" duration-ms="25495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="buyNowFunctionality()[pri:2, instance:testNG.verifyAddToCartOptionOnApplication@7dcf94f8]" started-at="2024-03-01T15:51:58 IST" name="buyNowFunctionality" finished-at="2024-03-01T15:52:30 IST" duration-ms="32190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyNowFunctionality -->
+        <test-method is-config="true" signature="logOutApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@7dcf94f8]" started-at="2024-03-01T15:52:30 IST" name="logOutApplication" finished-at="2024-03-01T15:52:30 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=buyNowFunctionality status=SUCCESS method=verifyAddToCartOptionOnApplication.buyNowFunctionality()[pri:2, instance:testNG.verifyAddToCartOptionOnApplication@7dcf94f8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApplication -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@7dcf94f8]" started-at="2024-03-01T15:52:30 IST" name="clearObjects" finished-at="2024-03-01T15:52:30 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@7dcf94f8]" started-at="2024-03-01T15:52:52 IST" name="closeBrowser" finished-at="2024-03-01T15:52:55 IST" duration-ms="2429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNG.verifyAddToCartOptionOnApplication -->
+      <class name="testNG.verifyCustomerServiceSection">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNG.verifyCustomerServiceSection@31190526]" started-at="2024-03-01T15:47:56 IST" name="openBrowser" finished-at="2024-03-01T15:48:01 IST" duration-ms="5195" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:testNG.verifyCustomerServiceSection@31190526]" started-at="2024-03-01T15:48:20 IST" name="createPOMObjects" finished-at="2024-03-01T15:48:20 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObjects -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyCustomerServiceSection@31190526]" started-at="2024-03-01T15:48:20 IST" name="openApplication" finished-at="2024-03-01T15:49:33 IST" duration-ms="73728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="verifyMsgOnCustomerServicePage()[pri:1, instance:testNG.verifyCustomerServiceSection@31190526]" started-at="2024-03-01T15:49:33 IST" name="verifyMsgOnCustomerServicePage" finished-at="2024-03-01T15:49:34 IST" duration-ms="564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMsgOnCustomerServicePage -->
+        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyCustomerServiceSection@31190526]" started-at="2024-03-01T15:49:34 IST" name="closeApplication" finished-at="2024-03-01T15:49:34 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMsgOnCustomerServicePage status=SUCCESS method=verifyCustomerServiceSection.verifyMsgOnCustomerServicePage()[pri:1, instance:testNG.verifyCustomerServiceSection@31190526] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyCustomerServiceSection@31190526]" started-at="2024-03-01T15:49:34 IST" name="openApplication" finished-at="2024-03-01T15:50:28 IST" duration-ms="54445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="verifyFindMoreSolutionAndAskQuationfunction()[pri:2, instance:testNG.verifyCustomerServiceSection@31190526]" started-at="2024-03-01T15:50:28 IST" name="verifyFindMoreSolutionAndAskQuationfunction" finished-at="2024-03-01T15:50:41 IST" duration-ms="12332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFindMoreSolutionAndAskQuationfunction -->
+        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyCustomerServiceSection@31190526]" started-at="2024-03-01T15:50:41 IST" name="closeApplication" finished-at="2024-03-01T15:50:41 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyFindMoreSolutionAndAskQuationfunction status=SUCCESS method=verifyCustomerServiceSection.verifyFindMoreSolutionAndAskQuationfunction()[pri:2, instance:testNG.verifyCustomerServiceSection@31190526] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyCustomerServiceSection@31190526]" started-at="2024-03-01T15:50:41 IST" name="openApplication" finished-at="2024-03-01T15:51:01 IST" duration-ms="19882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="verifyLaguageSelectionMarathi()[pri:3, instance:testNG.verifyCustomerServiceSection@31190526]" started-at="2024-03-01T15:51:01 IST" name="verifyLaguageSelectionMarathi" finished-at="2024-03-01T15:51:05 IST" duration-ms="4894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLaguageSelectionMarathi -->
+        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyCustomerServiceSection@31190526]" started-at="2024-03-01T15:51:05 IST" name="closeApplication" finished-at="2024-03-01T15:51:05 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLaguageSelectionMarathi status=SUCCESS method=verifyCustomerServiceSection.verifyLaguageSelectionMarathi()[pri:3, instance:testNG.verifyCustomerServiceSection@31190526] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:testNG.verifyCustomerServiceSection@31190526]" started-at="2024-03-01T15:51:05 IST" name="clearObjects" finished-at="2024-03-01T15:51:05 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNG.verifyCustomerServiceSection@31190526]" started-at="2024-03-01T15:52:55 IST" name="closeBrowser" finished-at="2024-03-01T15:52:58 IST" duration-ms="2860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNG.verifyCustomerServiceSection -->
+      <class name="testNG.verifyPrimeVideoTrailerPlayFuctionality">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478]" started-at="2024-03-01T15:48:09 IST" name="openBrowser" finished-at="2024-03-01T15:48:19 IST" duration-ms="10071" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478]" started-at="2024-03-01T15:48:19 IST" name="createPOMObjects" finished-at="2024-03-01T15:48:19 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObjects -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478]" started-at="2024-03-01T15:48:19 IST" name="openApplication" finished-at="2024-03-01T15:48:55 IST" duration-ms="35698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="primeVideosectionFuctionality()[pri:1, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478]" started-at="2024-03-01T15:48:55 IST" name="primeVideosectionFuctionality" finished-at="2024-03-01T15:49:14 IST" duration-ms="19567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- primeVideosectionFuctionality -->
+        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478]" started-at="2024-03-01T15:49:14 IST" name="closeApplication" finished-at="2024-03-01T15:49:14 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=primeVideosectionFuctionality status=SUCCESS method=verifyPrimeVideoTrailerPlayFuctionality.primeVideosectionFuctionality()[pri:1, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478]" started-at="2024-03-01T15:49:14 IST" name="openApplication" finished-at="2024-03-01T15:49:43 IST" duration-ms="28738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="verifyCategorySectionInPrimeVideo()[pri:2, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478]" started-at="2024-03-01T15:49:43 IST" name="verifyCategorySectionInPrimeVideo" finished-at="2024-03-01T15:49:59 IST" duration-ms="15446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategorySectionInPrimeVideo -->
+        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478]" started-at="2024-03-01T15:49:59 IST" name="closeApplication" finished-at="2024-03-01T15:49:59 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCategorySectionInPrimeVideo status=SUCCESS method=verifyPrimeVideoTrailerPlayFuctionality.verifyCategorySectionInPrimeVideo()[pri:2, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478]" started-at="2024-03-01T15:49:59 IST" name="clearObjects" finished-at="2024-03-01T15:49:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478]" started-at="2024-03-01T15:53:01 IST" name="closeBrowser" finished-at="2024-03-01T15:53:03 IST" duration-ms="1968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNG.verifyPrimeVideoTrailerPlayFuctionality -->
+      <class name="testNG.verifyNewLaunchSectionWithLaptop">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@229f66ed]" started-at="2024-03-01T15:48:01 IST" name="openBrowser" finished-at="2024-03-01T15:48:09 IST" duration-ms="7669" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@229f66ed]" started-at="2024-03-01T15:48:19 IST" name="createPOMObjects" finished-at="2024-03-01T15:48:19 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObjects -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@229f66ed]" started-at="2024-03-01T15:48:19 IST" name="openApplication" finished-at="2024-03-01T15:51:18 IST" duration-ms="178916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="verifyAddBothTocartFuctionality()[pri:1, instance:testNG.verifyNewLaunchSectionWithLaptop@229f66ed]" started-at="2024-03-01T15:51:18 IST" name="verifyAddBothTocartFuctionality" finished-at="2024-03-01T15:51:48 IST" duration-ms="30367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddBothTocartFuctionality -->
+        <test-method is-config="true" signature="logOutApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@229f66ed]" started-at="2024-03-01T15:51:48 IST" name="logOutApplication" finished-at="2024-03-01T15:51:48 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddBothTocartFuctionality status=SUCCESS method=verifyNewLaunchSectionWithLaptop.verifyAddBothTocartFuctionality()[pri:1, instance:testNG.verifyNewLaunchSectionWithLaptop@229f66ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApplication -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@229f66ed]" started-at="2024-03-01T15:51:48 IST" name="openApplication" finished-at="2024-03-01T15:52:33 IST" duration-ms="44928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="verifyGotoCartbuttonOnRightSideSection()[pri:2, instance:testNG.verifyNewLaunchSectionWithLaptop@229f66ed]" started-at="2024-03-01T15:52:33 IST" name="verifyGotoCartbuttonOnRightSideSection" finished-at="2024-03-01T15:52:52 IST" duration-ms="19141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGotoCartbuttonOnRightSideSection -->
+        <test-method is-config="true" signature="logOutApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@229f66ed]" started-at="2024-03-01T15:52:52 IST" name="logOutApplication" finished-at="2024-03-01T15:52:52 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyGotoCartbuttonOnRightSideSection status=SUCCESS method=verifyNewLaunchSectionWithLaptop.verifyGotoCartbuttonOnRightSideSection()[pri:2, instance:testNG.verifyNewLaunchSectionWithLaptop@229f66ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApplication -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@229f66ed]" started-at="2024-03-01T15:52:52 IST" name="clearObjects" finished-at="2024-03-01T15:52:52 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@229f66ed]" started-at="2024-03-01T15:52:58 IST" name="closeBrowser" finished-at="2024-03-01T15:53:01 IST" duration-ms="3359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNG.verifyNewLaunchSectionWithLaptop -->
+    </test> <!-- EdgeTest -->
+    <test started-at="2024-03-01T15:52:03 IST" name="FirefoxTest" finished-at="2024-03-01T15:54:23 IST" duration-ms="140822">
+      <class name="testNG.verifyAddToCartOptionOnApplication">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@3eb25e1a]" started-at="2024-03-01T15:52:03 IST" name="openBrowser" finished-at="2024-03-01T15:52:13 IST" duration-ms="10857" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@3eb25e1a]" started-at="2024-03-01T15:52:46 IST" name="createPOMObjects" finished-at="2024-03-01T15:52:46 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObjects -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@3eb25e1a]" started-at="2024-03-01T15:52:46 IST" name="openApplication" finished-at="2024-03-01T15:53:29 IST" duration-ms="43541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="addToCartFuctionality()[pri:1, instance:testNG.verifyAddToCartOptionOnApplication@3eb25e1a]" started-at="2024-03-01T15:53:29 IST" name="addToCartFuctionality" finished-at="2024-03-01T15:53:44 IST" duration-ms="14550" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: (//input[@id='add-to-cart-button'])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22624, moz:profile: C:\Users\amol\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 313f3cef-a2dd-43d4-bfc9-4f4c9620ef4f
+*** Element info: {Using=xpath, value=(//input[@id='add-to-cart-button'])[2]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: (//input[@id='add-to-cart-button'])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22624, moz:profile: C:\Users\amol\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 313f3cef-a2dd-43d4-bfc9-4f4c9620ef4f
+*** Element info: {Using=xpath, value=(//input[@id='add-to-cart-button'])[2]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Pages.SelectedProductPage.clickOnAddToCart(SelectedProductPage.java:41)
+at testNG.verifyAddToCartOptionOnApplication.addToCartFuctionality(verifyAddToCartOptionOnApplication.java:98)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartFuctionality -->
+        <test-method is-config="true" signature="logOutApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@3eb25e1a]" started-at="2024-03-01T15:53:44 IST" name="logOutApplication" finished-at="2024-03-01T15:53:48 IST" duration-ms="4026" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addToCartFuctionality status=FAILURE method=verifyAddToCartOptionOnApplication.addToCartFuctionality()[pri:1, instance:testNG.verifyAddToCartOptionOnApplication@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApplication -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@3eb25e1a]" started-at="2024-03-01T15:53:48 IST" name="openApplication" finished-at="2024-03-01T15:54:06 IST" duration-ms="18279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="buyNowFunctionality()[pri:2, instance:testNG.verifyAddToCartOptionOnApplication@3eb25e1a]" started-at="2024-03-01T15:54:06 IST" name="buyNowFunctionality" finished-at="2024-03-01T15:54:12 IST" duration-ms="6174" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //a[text()='Price: High to Low']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22624, moz:profile: C:\Users\amol\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 313f3cef-a2dd-43d4-bfc9-4f4c9620ef4f
+*** Element info: {Using=xpath, value=//a[text()='Price: High to Low']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[text()='Price: High to Low']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22624, moz:profile: C:\Users\amol\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 313f3cef-a2dd-43d4-bfc9-4f4c9620ef4f
+*** Element info: {Using=xpath, value=//a[text()='Price: High to Low']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Pages.ResultPage.clickOnPriceHightoLow(ResultPage.java:40)
+at testNG.verifyAddToCartOptionOnApplication.buyNowFunctionality(verifyAddToCartOptionOnApplication.java:115)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyNowFunctionality -->
+        <test-method is-config="true" signature="logOutApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@3eb25e1a]" started-at="2024-03-01T15:54:12 IST" name="logOutApplication" finished-at="2024-03-01T15:54:13 IST" duration-ms="867" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=buyNowFunctionality status=FAILURE method=verifyAddToCartOptionOnApplication.buyNowFunctionality()[pri:2, instance:testNG.verifyAddToCartOptionOnApplication@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApplication -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@3eb25e1a]" started-at="2024-03-01T15:54:13 IST" name="clearObjects" finished-at="2024-03-01T15:54:13 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNG.verifyAddToCartOptionOnApplication@3eb25e1a]" started-at="2024-03-01T15:54:13 IST" name="closeBrowser" finished-at="2024-03-01T15:54:16 IST" duration-ms="3389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNG.verifyAddToCartOptionOnApplication -->
+      <class name="testNG.verifyPrimeVideoTrailerPlayFuctionality">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@f5958c9]" started-at="2024-03-01T15:52:32 IST" name="openBrowser" finished-at="2024-03-01T15:52:46 IST" duration-ms="13706" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@f5958c9]" started-at="2024-03-01T15:52:46 IST" name="createPOMObjects" finished-at="2024-03-01T15:52:46 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObjects -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@f5958c9]" started-at="2024-03-01T15:52:46 IST" name="openApplication" finished-at="2024-03-01T15:53:06 IST" duration-ms="20401" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: (//div[text()='Amazon Prime Video'])[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 3692, moz:profile: C:\Users\amol\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ce04a328-9443-45a9-b56d-bd045c71caac
+*** Element info: {Using=xpath, value=(//div[text()='Amazon Prime Video'])[1]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: (//div[text()='Amazon Prime Video'])[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 3692, moz:profile: C:\Users\amol\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ce04a328-9443-45a9-b56d-bd045c71caac
+*** Element info: {Using=xpath, value=(//div[text()='Amazon Prime Video'])[1]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Pages.PrimeVideoPage.clickOnAmazonPrimeSection(PrimeVideoPage.java:74)
+at testNG.verifyPrimeVideoTrailerPlayFuctionality.openApplication(verifyPrimeVideoTrailerPlayFuctionality.java:85)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="primeVideosectionFuctionality()[pri:1, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@f5958c9]" started-at="2024-03-01T15:53:06 IST" name="primeVideosectionFuctionality" finished-at="2024-03-01T15:53:06 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: (//div[text()='Amazon Prime Video'])[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 3692, moz:profile: C:\Users\amol\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ce04a328-9443-45a9-b56d-bd045c71caac
+*** Element info: {Using=xpath, value=(//div[text()='Amazon Prime Video'])[1]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: (//div[text()='Amazon Prime Video'])[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 3692, moz:profile: C:\Users\amol\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ce04a328-9443-45a9-b56d-bd045c71caac
+*** Element info: {Using=xpath, value=(//div[text()='Amazon Prime Video'])[1]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Pages.PrimeVideoPage.clickOnAmazonPrimeSection(PrimeVideoPage.java:74)
+at testNG.verifyPrimeVideoTrailerPlayFuctionality.openApplication(verifyPrimeVideoTrailerPlayFuctionality.java:85)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- primeVideosectionFuctionality -->
+        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@f5958c9]" started-at="2024-03-01T15:53:06 IST" name="closeApplication" finished-at="2024-03-01T15:53:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@f5958c9]" started-at="2024-03-01T15:53:06 IST" name="openApplication" finished-at="2024-03-01T15:53:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="verifyCategorySectionInPrimeVideo()[pri:2, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@f5958c9]" started-at="2024-03-01T15:53:06 IST" name="verifyCategorySectionInPrimeVideo" finished-at="2024-03-01T15:53:06 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: (//div[text()='Amazon Prime Video'])[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 3692, moz:profile: C:\Users\amol\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ce04a328-9443-45a9-b56d-bd045c71caac
+*** Element info: {Using=xpath, value=(//div[text()='Amazon Prime Video'])[1]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: (//div[text()='Amazon Prime Video'])[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 3692, moz:profile: C:\Users\amol\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ce04a328-9443-45a9-b56d-bd045c71caac
+*** Element info: {Using=xpath, value=(//div[text()='Amazon Prime Video'])[1]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Pages.PrimeVideoPage.clickOnAmazonPrimeSection(PrimeVideoPage.java:74)
+at testNG.verifyPrimeVideoTrailerPlayFuctionality.openApplication(verifyPrimeVideoTrailerPlayFuctionality.java:85)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategorySectionInPrimeVideo -->
+        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@f5958c9]" started-at="2024-03-01T15:53:06 IST" name="closeApplication" finished-at="2024-03-01T15:53:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@f5958c9]" started-at="2024-03-01T15:53:06 IST" name="clearObjects" finished-at="2024-03-01T15:53:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNG.verifyPrimeVideoTrailerPlayFuctionality@f5958c9]" started-at="2024-03-01T15:54:22 IST" name="closeBrowser" finished-at="2024-03-01T15:54:23 IST" duration-ms="1771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNG.verifyPrimeVideoTrailerPlayFuctionality -->
+      <class name="testNG.verifyCustomerServiceSection">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNG.verifyCustomerServiceSection@77c2494c]" started-at="2024-03-01T15:52:13 IST" name="openBrowser" finished-at="2024-03-01T15:52:24 IST" duration-ms="10201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:testNG.verifyCustomerServiceSection@77c2494c]" started-at="2024-03-01T15:52:46 IST" name="createPOMObjects" finished-at="2024-03-01T15:52:46 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObjects -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyCustomerServiceSection@77c2494c]" started-at="2024-03-01T15:52:46 IST" name="openApplication" finished-at="2024-03-01T15:53:27 IST" duration-ms="41028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="verifyMsgOnCustomerServicePage()[pri:1, instance:testNG.verifyCustomerServiceSection@77c2494c]" started-at="2024-03-01T15:53:27 IST" name="verifyMsgOnCustomerServicePage" finished-at="2024-03-01T15:53:27 IST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMsgOnCustomerServicePage -->
+        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyCustomerServiceSection@77c2494c]" started-at="2024-03-01T15:53:27 IST" name="closeApplication" finished-at="2024-03-01T15:53:27 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMsgOnCustomerServicePage status=SUCCESS method=verifyCustomerServiceSection.verifyMsgOnCustomerServicePage()[pri:1, instance:testNG.verifyCustomerServiceSection@77c2494c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyCustomerServiceSection@77c2494c]" started-at="2024-03-01T15:53:27 IST" name="openApplication" finished-at="2024-03-01T15:53:46 IST" duration-ms="19399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="verifyFindMoreSolutionAndAskQuationfunction()[pri:2, instance:testNG.verifyCustomerServiceSection@77c2494c]" started-at="2024-03-01T15:53:46 IST" name="verifyFindMoreSolutionAndAskQuationfunction" finished-at="2024-03-01T15:53:53 IST" duration-ms="6902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFindMoreSolutionAndAskQuationfunction -->
+        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyCustomerServiceSection@77c2494c]" started-at="2024-03-01T15:53:53 IST" name="closeApplication" finished-at="2024-03-01T15:53:53 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyFindMoreSolutionAndAskQuationfunction status=SUCCESS method=verifyCustomerServiceSection.verifyFindMoreSolutionAndAskQuationfunction()[pri:2, instance:testNG.verifyCustomerServiceSection@77c2494c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyCustomerServiceSection@77c2494c]" started-at="2024-03-01T15:53:53 IST" name="openApplication" finished-at="2024-03-01T15:54:08 IST" duration-ms="14462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="verifyLaguageSelectionMarathi()[pri:3, instance:testNG.verifyCustomerServiceSection@77c2494c]" started-at="2024-03-01T15:54:08 IST" name="verifyLaguageSelectionMarathi" finished-at="2024-03-01T15:54:08 IST" duration-ms="498" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help&language=mr_IN] but found [about:blank]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help&language=mr_IN] but found [about:blank]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testNG.verifyCustomerServiceSection.verifyLaguageSelectionMarathi(verifyCustomerServiceSection.java:115)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLaguageSelectionMarathi -->
+        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyCustomerServiceSection@77c2494c]" started-at="2024-03-01T15:54:08 IST" name="closeApplication" finished-at="2024-03-01T15:54:09 IST" duration-ms="561" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLaguageSelectionMarathi status=FAILURE method=verifyCustomerServiceSection.verifyLaguageSelectionMarathi()[pri:3, instance:testNG.verifyCustomerServiceSection@77c2494c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:testNG.verifyCustomerServiceSection@77c2494c]" started-at="2024-03-01T15:54:09 IST" name="clearObjects" finished-at="2024-03-01T15:54:09 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNG.verifyCustomerServiceSection@77c2494c]" started-at="2024-03-01T15:54:16 IST" name="closeBrowser" finished-at="2024-03-01T15:54:19 IST" duration-ms="2601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNG.verifyCustomerServiceSection -->
+      <class name="testNG.verifyNewLaunchSectionWithLaptop">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@477b4cdf]" started-at="2024-03-01T15:52:24 IST" name="openBrowser" finished-at="2024-03-01T15:52:32 IST" duration-ms="8232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@477b4cdf]" started-at="2024-03-01T15:52:46 IST" name="createPOMObjects" finished-at="2024-03-01T15:52:46 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObjects -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@477b4cdf]" started-at="2024-03-01T15:52:46 IST" name="openApplication" finished-at="2024-03-01T15:53:57 IST" duration-ms="71304" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <a class="a-link-normal s-navigation-item" href="/s?i=computers&bbn=1375424031&rh=n%3A1375424031%2Cp_36%3A7252032031%2Cp_123%3A46655&dc&qid=1709288628&rnid=91049095031&ref=sr_nr_p_123_7&ds=v1%3A7DjWXNIkDTpthJmu1sDtSQbKNuwjnuN1ck0n0q%2F0lRE"> is not clickable at point (70,59) because another element <div id="nav-logo"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12536, moz:profile: C:\Users\amol\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b595a7c0-1bda-462c-80fc-aac0d0c4974e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <a class="a-link-normal s-navigation-item" href="/s?i=computers&bbn=1375424031&rh=n%3A1375424031%2Cp_36%3A7252032031%2Cp_123%3A46655&dc&qid=1709288628&rnid=91049095031&ref=sr_nr_p_123_7&ds=v1%3A7DjWXNIkDTpthJmu1sDtSQbKNuwjnuN1ck0n0q%2F0lRE"> is not clickable at point (70,59) because another element <div id="nav-logo"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12536, moz:profile: C:\Users\amol\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b595a7c0-1bda-462c-80fc-aac0d0c4974e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Pages.NewLaunchesMobAndEle.clickOnMicrosoft(NewLaunchesMobAndEle.java:76)
+at testNG.verifyNewLaunchSectionWithLaptop.openApplication(verifyNewLaunchSectionWithLaptop.java:89)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="verifyAddBothTocartFuctionality()[pri:1, instance:testNG.verifyNewLaunchSectionWithLaptop@477b4cdf]" started-at="2024-03-01T15:53:57 IST" name="verifyAddBothTocartFuctionality" finished-at="2024-03-01T15:53:57 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <a class="a-link-normal s-navigation-item" href="/s?i=computers&bbn=1375424031&rh=n%3A1375424031%2Cp_36%3A7252032031%2Cp_123%3A46655&dc&qid=1709288628&rnid=91049095031&ref=sr_nr_p_123_7&ds=v1%3A7DjWXNIkDTpthJmu1sDtSQbKNuwjnuN1ck0n0q%2F0lRE"> is not clickable at point (70,59) because another element <div id="nav-logo"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12536, moz:profile: C:\Users\amol\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b595a7c0-1bda-462c-80fc-aac0d0c4974e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <a class="a-link-normal s-navigation-item" href="/s?i=computers&bbn=1375424031&rh=n%3A1375424031%2Cp_36%3A7252032031%2Cp_123%3A46655&dc&qid=1709288628&rnid=91049095031&ref=sr_nr_p_123_7&ds=v1%3A7DjWXNIkDTpthJmu1sDtSQbKNuwjnuN1ck0n0q%2F0lRE"> is not clickable at point (70,59) because another element <div id="nav-logo"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12536, moz:profile: C:\Users\amol\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b595a7c0-1bda-462c-80fc-aac0d0c4974e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Pages.NewLaunchesMobAndEle.clickOnMicrosoft(NewLaunchesMobAndEle.java:76)
+at testNG.verifyNewLaunchSectionWithLaptop.openApplication(verifyNewLaunchSectionWithLaptop.java:89)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddBothTocartFuctionality -->
+        <test-method is-config="true" signature="logOutApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@477b4cdf]" started-at="2024-03-01T15:53:57 IST" name="logOutApplication" finished-at="2024-03-01T15:53:57 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApplication -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@477b4cdf]" started-at="2024-03-01T15:53:57 IST" name="openApplication" finished-at="2024-03-01T15:53:57 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="verifyGotoCartbuttonOnRightSideSection()[pri:2, instance:testNG.verifyNewLaunchSectionWithLaptop@477b4cdf]" started-at="2024-03-01T15:53:57 IST" name="verifyGotoCartbuttonOnRightSideSection" finished-at="2024-03-01T15:53:57 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <a class="a-link-normal s-navigation-item" href="/s?i=computers&bbn=1375424031&rh=n%3A1375424031%2Cp_36%3A7252032031%2Cp_123%3A46655&dc&qid=1709288628&rnid=91049095031&ref=sr_nr_p_123_7&ds=v1%3A7DjWXNIkDTpthJmu1sDtSQbKNuwjnuN1ck0n0q%2F0lRE"> is not clickable at point (70,59) because another element <div id="nav-logo"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12536, moz:profile: C:\Users\amol\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b595a7c0-1bda-462c-80fc-aac0d0c4974e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <a class="a-link-normal s-navigation-item" href="/s?i=computers&bbn=1375424031&rh=n%3A1375424031%2Cp_36%3A7252032031%2Cp_123%3A46655&dc&qid=1709288628&rnid=91049095031&ref=sr_nr_p_123_7&ds=v1%3A7DjWXNIkDTpthJmu1sDtSQbKNuwjnuN1ck0n0q%2F0lRE"> is not clickable at point (70,59) because another element <div id="nav-logo"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12536, moz:profile: C:\Users\amol\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b595a7c0-1bda-462c-80fc-aac0d0c4974e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Pages.NewLaunchesMobAndEle.clickOnMicrosoft(NewLaunchesMobAndEle.java:76)
+at testNG.verifyNewLaunchSectionWithLaptop.openApplication(verifyNewLaunchSectionWithLaptop.java:89)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGotoCartbuttonOnRightSideSection -->
+        <test-method is-config="true" signature="logOutApplication(org.testng.ITestResult)[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@477b4cdf]" started-at="2024-03-01T15:53:57 IST" name="logOutApplication" finished-at="2024-03-01T15:53:57 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApplication -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@477b4cdf]" started-at="2024-03-01T15:53:57 IST" name="clearObjects" finished-at="2024-03-01T15:53:57 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNG.verifyNewLaunchSectionWithLaptop@477b4cdf]" started-at="2024-03-01T15:54:19 IST" name="closeBrowser" finished-at="2024-03-01T15:54:22 IST" duration-ms="2592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNG.verifyNewLaunchSectionWithLaptop -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Suite -->
+</testng-results>
